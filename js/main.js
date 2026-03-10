@@ -76,6 +76,17 @@
   }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
 
   els.forEach(function(el) { io.observe(el); });
+
+  // Fallback: force-reveal any still-hidden elements after 3 s.
+  // Covers full-page screenshots, print views, and edge cases
+  // where IntersectionObserver never fires.
+  setTimeout(function() {
+    els.forEach(function(el) {
+      if (!el.classList.contains('is-visible')) {
+        el.classList.add('is-visible');
+      }
+    });
+  }, 3000);
 })();
 
 /* ── Trust Bar: Counter Animation + Pop ─────────────────── */
