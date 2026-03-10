@@ -47,7 +47,12 @@
       if (wrap) wrap.classList.add('attorney__photo--fallback');
     }
     img.addEventListener('error', markFallback);
-    if (img.complete && img.naturalWidth === 0) markFallback();
+    // Defer the already-complete check so the browser finishes decoding first
+    if (img.complete) {
+      requestAnimationFrame(function() {
+        if (img.naturalWidth === 0) markFallback();
+      });
+    }
   });
 })();
 
