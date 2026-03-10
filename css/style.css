@@ -268,7 +268,7 @@ ul { list-style: none; }
 .hero__bg {
   position: absolute;
   inset: -30% 0;
-  background-image: url('https://images.unsplash.com/photo-1589829085577-f1a14d7e16f5?auto=format&fit=crop&w=1920&q=80');
+  background-image: url('https://images.unsplash.com/photo-1636652966850-5ac4d02370e9?auto=format&fit=crop&w=1920&q=80');
   background-size: cover;
   background-position: center top;
   will-change: transform;
