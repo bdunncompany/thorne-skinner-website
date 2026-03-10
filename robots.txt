@@ -1,0 +1,6 @@
+# Thorne & Skinner - tstgroup.com
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tstgroup.com/sitemap.xml

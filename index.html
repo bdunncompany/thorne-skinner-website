@@ -23,24 +23,54 @@
   <!-- Canonical -->
   <link rel="canonical" href="https://tstgroup.com/">
 
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#1a2332">
+
+  <!-- Geo / Local SEO -->
+  <meta name="geo.region" content="US-TX">
+  <meta name="geo.placename" content="Grand Prairie">
+  <meta name="geo.position" content="32.7459;-97.0197">
+  <meta name="ICBM" content="32.7459, -97.0197">
+
   <!-- Open Graph -->
   <meta property="og:title" content="Thorne &amp; Skinner | Personal Injury Attorneys | Grand Prairie, TX">
   <meta property="og:description" content="Over 70 years of combined experience representing injury victims and families in serious personal injury and wrongful death cases. AV Preeminent rated.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tstgroup.com/">
+  <meta property="og:image" content="https://tstgroup.com/images/courthouse-bg.jpg">
+  <meta property="og:image:width" content="1585">
+  <meta property="og:image:height" content="792">
+  <meta property="og:image:alt" content="Thorne and Skinner - Personal Injury Attorneys in Grand Prairie, Texas">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Thorne &amp; Skinner Attorneys at Law">
 
-  <!-- Structured Data -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Thorne &amp; Skinner | Personal Injury Attorneys | Grand Prairie, TX">
+  <meta name="twitter:description" content="Over 70 years of combined experience. AV Preeminent rated personal injury and civil litigation firm in Grand Prairie, TX. Call (972) 264-1614.">
+  <meta name="twitter:image" content="https://tstgroup.com/images/courthouse-bg.jpg">
+  <meta name="twitter:image:alt" content="Thorne and Skinner - Personal Injury Attorneys in Grand Prairie, Texas">
+
+  <!-- Structured Data: LegalService / LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["LegalService", "LocalBusiness"],
+    "@type": ["LegalService", "Attorney", "LocalBusiness"],
+    "@id": "https://tstgroup.com/#firm",
     "name": "Thorne & Skinner",
-    "description": "Personal injury and civil litigation law firm in Grand Prairie, Texas with over 70 years combined experience.",
+    "alternateName": "Thorne and Skinner Attorneys at Law",
+    "description": "Personal injury and civil litigation law firm in Grand Prairie, Texas with over 70 years combined experience. AV Preeminent rated by Martindale-Hubbell.",
     "url": "https://tstgroup.com",
     "telephone": "+1-972-264-1614",
-    "email": "kthorne@tstgroup.com",
+    "email": "info@tstgroup.com",
     "foundingDate": "1970",
-    "award": "AV Preeminent, Martindale-Hubbell",
+    "priceRange": "Free Consultation",
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Cash, Check, Credit Card",
+    "image": "https://tstgroup.com/images/courthouse-bg.jpg",
+    "logo": "https://tstgroup.com/images/ts-logo-nav.png",
+    "hasMap": "https://maps.google.com/?q=123+W+Main+St+Suite+300+Grand+Prairie+TX+75050",
+    "award": ["AV Preeminent, Martindale-Hubbell"],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 W. Main St., Suite 300",
@@ -54,21 +84,180 @@
       "latitude": 32.7459,
       "longitude": -97.0197
     },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:30",
+        "closes": "17:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "69",
+      "reviewCount": "69"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Google Reviewer" },
+        "reviewBody": "The attorneys at Thorne & Skinner fought hard for our family after a serious accident. They were professional, compassionate, and got us results we never expected."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Google Reviewer" },
+        "reviewBody": "Kim Thorne is an outstanding attorney. His experience shows in everything he does. I felt like I had the best possible representation from day one through settlement."
+      }
+    ],
     "areaServed": [
-      { "@type": "City", "name": "Grand Prairie" },
-      { "@type": "City", "name": "Arlington" },
-      { "@type": "City", "name": "Dallas" },
-      { "@type": "AdministrativeArea", "name": "Dallas-Fort Worth Metroplex" }
+      { "@type": "City", "name": "Grand Prairie", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "City", "name": "Arlington", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "City", "name": "Dallas", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "City", "name": "Fort Worth", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "City", "name": "Irving", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "City", "name": "Mansfield", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "City", "name": "Midlothian", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "City", "name": "Cedar Hill", "containedInPlace": { "@type": "State", "name": "Texas" } },
+      { "@type": "AdministrativeArea", "name": "Dallas-Fort Worth Metroplex" },
+      { "@type": "AdministrativeArea", "name": "Tarrant County" },
+      { "@type": "AdministrativeArea", "name": "Dallas County" }
     ],
     "knowsAbout": [
-      "Personal Injury",
-      "Car Accidents",
-      "Wrongful Death",
-      "18-Wheeler Accidents",
+      "Personal Injury Law",
+      "Car Accident Attorney",
+      "Truck Accident Lawyer",
+      "18-Wheeler Accident Attorney",
+      "Wrongful Death Attorney",
+      "Motorcycle Accident Lawyer",
+      "Slip and Fall Attorney",
+      "Premises Liability",
       "Civil Litigation",
+      "Insurance Bad Faith",
       "Real Estate Law",
+      "Title Services",
       "Estate Planning",
-      "Family Law"
+      "Wills and Probate",
+      "Family Law",
+      "Business Formation"
+    ],
+    "employee": [
+      { "@id": "https://tstgroup.com/#kim-thorne" },
+      { "@id": "https://tstgroup.com/#michael-skinner" }
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: Attorney - Kim R. Thorne -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Attorney",
+    "@id": "https://tstgroup.com/#kim-thorne",
+    "name": "Kim R. Thorne",
+    "givenName": "Kim",
+    "familyName": "Thorne",
+    "jobTitle": "Senior Partner",
+    "description": "Senior Partner at Thorne & Skinner with over 55 years of legal experience. AV Preeminent rated by Martindale-Hubbell. SMU graduate specializing in personal injury, civil litigation, and real estate law.",
+    "image": "https://tstgroup.com/images/kim-thorne.jpg",
+    "email": "kthorne@tstgroup.com",
+    "telephone": "+1-972-264-1614",
+    "url": "https://tstgroup.com/#attorneys",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Southern Methodist University"
+    },
+    "award": "AV Preeminent, Martindale-Hubbell",
+    "knowsAbout": ["Personal Injury", "Civil Litigation", "Real Estate Law", "Wrongful Death"],
+    "worksFor": { "@id": "https://tstgroup.com/#firm" }
+  }
+  </script>
+
+  <!-- Structured Data: Attorney - Michael L. Skinner -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Attorney",
+    "@id": "https://tstgroup.com/#michael-skinner",
+    "name": "Michael L. Skinner",
+    "givenName": "Michael",
+    "familyName": "Skinner",
+    "jobTitle": "Partner",
+    "description": "Partner at Thorne & Skinner. Texas Tech University School of Law graduate (JD 1993). Focuses on personal injury, civil litigation, business law, and estate planning.",
+    "image": "https://tstgroup.com/images/mike-skinner.jpg",
+    "email": "mskinner@tstgroup.com",
+    "telephone": "+1-972-264-1614",
+    "url": "https://tstgroup.com/#attorneys",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Texas Tech University School of Law"
+    },
+    "knowsAbout": ["Personal Injury", "Civil Litigation", "Business Law", "Estate Planning"],
+    "worksFor": { "@id": "https://tstgroup.com/#firm" }
+  }
+  </script>
+
+  <!-- Structured Data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Thorne & Skinner Attorneys at Law",
+    "url": "https://tstgroup.com",
+    "publisher": { "@id": "https://tstgroup.com/#firm" }
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of personal injury cases does Thorne & Skinner handle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Thorne & Skinner handles a wide range of personal injury cases including car accidents, 18-wheeler and commercial truck crashes, motorcycle accidents, Uber/Lyft rideshare accidents, slip and fall injuries, dog bites, oilfield injuries, traumatic brain injuries, nursing home abuse, police brutality, and dram shop/liquor liability claims."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does AV Preeminent rated mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AV Preeminent is the highest possible peer-review rating from Martindale-Hubbell, the most respected attorney rating organization. It reflects the highest level of professional skill and ethical standards as judged by other attorneys and judges who are familiar with the lawyer's work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Thorne & Skinner offer free consultations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. If you or a family member have been injured, Thorne & Skinner offers a free initial consultation to discuss your case. Call (972) 264-1614 to speak directly with an attorney. Evening and weekend appointments are available for injury clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas does Thorne & Skinner serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Thorne & Skinner is located in Grand Prairie, Texas and serves clients throughout the Dallas-Fort Worth Metroplex, including Arlington, Dallas, Fort Worth, Irving, Mansfield, Midlothian, Cedar Hill, and surrounding communities in Dallas and Tarrant Counties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Thorne & Skinner have a title company?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Thorne & Skinner operates Allegiance Title Company, an in-house title company that handles both residential and commercial real estate closings. Having legal and title services under one roof means faster closings and a single trusted team throughout the transaction. Contact the title department at (972) 264-9044."
+        }
+      }
     ]
   }
   </script>
@@ -499,7 +688,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260310b"></script>
+<script src="js/main.js?v=20260310c"></script>
 <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
 
 </body>
