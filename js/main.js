@@ -124,18 +124,15 @@
 /* ── Hero Parallax (desktop only, passive scroll) ───────── */
 (function() {
   if (window.innerWidth < 768) return;
-  var hero = document.querySelector('.hero');
-  if (!hero) return;
+  var heroBg = document.querySelector('.hero__bg');
+  if (!heroBg) return;
   var ticking = false;
 
   window.addEventListener('scroll', function() {
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(function() {
-      var sy = window.scrollY;
-      if (sy < hero.offsetHeight * 1.3) {
-        hero.style.backgroundPositionY = 'calc(50% + ' + (sy * 0.22) + 'px)';
-      }
+      heroBg.style.transform = 'translateY(' + (window.scrollY * 0.4) + 'px)';
       ticking = false;
     });
   }, { passive: true });
