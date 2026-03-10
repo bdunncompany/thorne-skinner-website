@@ -47,6 +47,23 @@ img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
+/* ── Skip Navigation Link ────────────────────────────────── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  padding: 0.75rem 1.25rem;
+  background: var(--navy);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: var(--radius);
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
 /* ── Container ────────────────────────────────────────────── */
 .container {
   max-width: var(--max-width);
@@ -328,11 +345,6 @@ ul { list-style: none; }
   flex-wrap: wrap;
   margin-bottom: 1.25rem;
 }
-.hero__free {
-  color: rgba(255,255,255,0.55);
-  font-size: 0.85rem;
-}
-
 /* ── Trust Bar ────────────────────────────────────────────── */
 .trust {
   background: var(--gold);
@@ -484,11 +496,6 @@ ul { list-style: none; }
   border-radius: var(--radius-lg);
   padding: 1.75rem;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
-}
-.practice__card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow);
-  border-color: var(--gold);
 }
 .practice__card--featured {
   grid-column: span 2;
@@ -758,7 +765,7 @@ ul { list-style: none; }
 .footer__bottom p { font-size: 0.82rem; }
 .footer__disclaimer {
   color: rgba(255,255,255,0.3);
-  font-size: 0.75rem !important;
+  font-size: 0.75rem;
   line-height: 1.5;
   max-width: 800px;
 }
@@ -834,15 +841,13 @@ ul { list-style: none; }
 .hero__badge,
 .hero__title,
 .hero__sub,
-.hero__actions,
-.hero__free {
+.hero__actions {
   animation: heroFadeUp 0.72s ease both;
 }
 .hero__badge   { animation-delay: 0.06s; }
 .hero__title   { animation-delay: 0.20s; }
 .hero__sub     { animation-delay: 0.33s; }
 .hero__actions { animation-delay: 0.46s; }
-.hero__free    { animation-delay: 0.56s; }
 
 @keyframes heroFadeUp {
   from { opacity: 0; transform: translateY(22px); }
@@ -969,7 +974,7 @@ ul { list-style: none; }
     transform: none;
   }
   .hero__badge, .hero__title, .hero__sub,
-  .hero__actions, .hero__free {
+  .hero__actions {
     animation: none;
     opacity: 1;
   }

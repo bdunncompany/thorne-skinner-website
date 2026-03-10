@@ -17,8 +17,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css?v=20260310d">
+  <link rel="stylesheet" href="css/style.css?v=20260310e">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://tstgroup.com/">
@@ -265,6 +270,9 @@
 
 <body>
 
+<!-- Skip Navigation (Accessibility) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <!-- ═══════════════════════════════════════════════════════════
      TOP BAR
 ════════════════════════════════════════════════════════════ -->
@@ -295,7 +303,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <a href="tel:+19722641614" class="nav__cta">Call Now</a>
-    <button class="nav__hamburger" id="navHamburger" aria-label="Open menu">
+    <button class="nav__hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -304,6 +312,7 @@
 <!-- ═══════════════════════════════════════════════════════════
      HERO
 ════════════════════════════════════════════════════════════ -->
+<main id="main-content">
 <section class="hero" id="top">
   <div class="hero__bg" aria-hidden="true"></div>
   <div class="hero__overlay"></div>
@@ -652,6 +661,8 @@
   </div>
 </section>
 
+</main>
+
 <!-- ═══════════════════════════════════════════════════════════
      FOOTER
 ════════════════════════════════════════════════════════════ -->
@@ -688,7 +699,7 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260310c"></script>
+<script src="js/main.js?v=20260310d"></script>
 <script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
 
 </body>
