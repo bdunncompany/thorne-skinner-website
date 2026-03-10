@@ -5,14 +5,14 @@
 
 /* ── CSS Variables ────────────────────────────────────────── */
 :root {
-  --navy:        #1a2744;
-  --navy-dark:   #111b33;
-  --navy-light:  #223366;
-  --gold:        #b8922a;
-  --gold-light:  #d4a843;
-  --gold-hover:  #c9a03a;
+  --navy:        #1c3a20;
+  --navy-dark:   #132018;
+  --navy-light:  #264e2a;
+  --gold:        #b09040;
+  --gold-light:  #c9a84c;
+  --gold-hover:  #bda045;
   --white:       #ffffff;
-  --off-white:   #f9f7f4;
+  --off-white:   #f5f7f4;
   --gray-50:     #f8f9fa;
   --gray-100:    #f1f3f5;
   --gray-200:    #e9ecef;
@@ -20,8 +20,8 @@
   --gray-600:    #6c757d;
   --gray-700:    #495057;
   --gray-800:    #343a40;
-  --text:        #1e2530;
-  --text-light:  #5a6475;
+  --text:        #1a2419;
+  --text-light:  #5a6a58;
   --radius:      6px;
   --radius-lg:   12px;
   --shadow-sm:   0 1px 3px rgba(0,0,0,0.08);
@@ -76,7 +76,7 @@ ul { list-style: none; }
 .btn--primary:hover {
   background: var(--gold-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(184,146,42,0.35);
+  box-shadow: 0 6px 20px rgba(176,144,64,0.35);
 }
 .btn--outline {
   background: transparent;
@@ -172,9 +172,21 @@ ul { list-style: none; }
 }
 .nav__logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.65rem;
   flex-shrink: 0;
   line-height: 1.1;
+}
+.nav__logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
+}
+.nav__logo-text {
+  display: flex;
+  flex-direction: column;
 }
 .nav__logo-main {
   font-family: var(--font-serif);
@@ -262,7 +274,7 @@ ul { list-style: none; }
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(26,39,68,0.95) 0%, rgba(26,39,68,0.7) 60%, rgba(26,39,68,0.4) 100%);
+  background: linear-gradient(to right, rgba(19,32,24,0.95) 0%, rgba(19,32,24,0.7) 60%, rgba(19,32,24,0.4) 100%);
 }
 .hero__content {
   position: relative;
@@ -275,8 +287,8 @@ ul { list-style: none; }
 }
 .hero__badge {
   display: inline-block;
-  background: rgba(184,146,42,0.2);
-  border: 1px solid rgba(184,146,42,0.5);
+  background: rgba(176,144,64,0.2);
+  border: 1px solid rgba(176,144,64,0.5);
   color: var(--gold-light);
   font-size: 0.8rem;
   font-weight: 600;
@@ -350,7 +362,7 @@ ul { list-style: none; }
 .trust__divider {
   width: 1px;
   height: 40px;
-  background: rgba(26,39,68,0.2);
+  background: rgba(19,32,24,0.2);
 }
 
 /* ── About ────────────────────────────────────────────────── */
