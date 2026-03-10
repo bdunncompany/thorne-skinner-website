@@ -446,8 +446,8 @@ ul { list-style: none; }
   border-color: var(--navy);
   color: var(--white);
 }
-.practice__card--featured h3 { color: var(--white); }
-.practice__card--featured p { color: rgba(255,255,255,0.8); }
+.practice__card.practice__card--featured h3 { color: var(--white); }
+.practice__card.practice__card--featured p { color: rgba(255,255,255,0.85); }
 .practice__card--featured ul {
   color: rgba(255,255,255,0.75);
   columns: 2;
